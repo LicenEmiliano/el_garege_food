@@ -1,0 +1,175 @@
+body {
+    margin: 15px;
+    background-image: url(./imagen/elgarage1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.nav {
+    height: 50px;
+}
+
+#nave {
+    gap: 30px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+p,
+h1,
+h3,
+h2 {
+    color: rgb(230, 235, 240);
+}
+
+h3,
+h2 {
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 70px;
+    transition: transform 1s;
+    font-family: 'Londrina Shadow', cursive;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+.padremanu,
+#padret {
+    display: flex;
+    justify-content: center;
+}
+
+#menu {
+    background-color: rgb(17, 16, 16);
+    padding: 2px;
+    border: 5px solid rgb(223, 16, 16);
+    width: 200px;
+    height: auto;
+    font-size: 25px;
+}
+
+.scale:hover,
+#menu:hover,
+h1:hover {
+    transform: scale(1.2);
+}
+
+h1:hover{
+    transform: scale(1.4);    
+}
+
+.cel {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+h1:hover {
+    transition: transform 1s;
+}
+
+hr {
+    width: 65%;
+}
+
+@media (max-width: 900px) {
+
+    h1 {
+        font-size: 65px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    iframe {
+        width: 450px;
+        height: 250px;
+    }
+
+    #none {
+        display: none;
+    }
+
+    .nav {
+        height: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 45px;
+    }
+
+    iframe {
+        width: 180px;
+        height: 190px;
+    }
+
+    #none {
+        display: none;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .nav {
+        height: 30px;
+    }
+
+    #nave {
+        margin: 5px;
+        gap: 10px;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+
+    body {
+        margin: 10px;
+        background-position: 70%;
+    }
+
+    hr {
+        width: 80%;
+    }
+
+    #menu {
+        width: 170px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}

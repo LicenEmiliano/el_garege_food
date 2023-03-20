@@ -1,0 +1,176 @@
+h1,
+p {
+    color: rgb(230, 235, 240);
+    text-align: center;
+}
+
+body {
+    background-image: url(./imagen/elgarage2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1,
+h2 {
+    font-family: 'Londrina Shadow', cursive;
+}
+
+.nav {
+    height: 40px;
+}
+
+#nave {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#padre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#center {
+    grid-column: 2/4;
+}
+
+.img1 {
+    height: 210px;
+    width: 340px;
+}
+
+.img2 {
+    width: 340px;
+}
+
+.img1,
+.img2 {
+    border-radius: 30%;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.padre {
+    position: relative;
+    transition: transform 2s;
+}
+
+.titulo,
+.titulo2 {
+    font-size: 45px;
+    color: rgb(241, 237, 237);
+    background-color: rgb(22, 21, 21, 50%);
+}
+
+.titulo2 {
+    position: absolute;
+    top: 60px;
+    left: 55px;
+}
+
+.titulo {
+    position: absolute;
+    top: 40px;
+    left: 125px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+    gap: 300px;
+}
+
+.padre:hover {
+    transform: scale(1.3);
+    transition: transform 1s;
+}
+
+.scale:hover {
+    transform: scale(1.2);
+}
+
+.cel {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+hr {
+    width: 65%;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 75px;
+    }
+
+    #nave {
+        display: none;
+    }
+
+    #padre {
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        gap: 330px;
+        height: 400px;
+    }
+
+    .img1 {
+        width: 180px;
+        height: 130px;
+    }
+
+    .img2 {
+        width: 200px;
+        height: 130px;
+    }
+
+    .titulo,
+    .titulo2 {
+        font-size: 30px;
+    }
+
+    .titulo2 {
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+
+    .titulo {
+        position: absolute;
+        top: 20px;
+        left: 55px;
+    }
+}
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 55px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 140px;
+        margin: 100px;
+    }
+}
